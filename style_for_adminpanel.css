@@ -1,0 +1,10 @@
+.navbar-white > li > a {
+  color: white;
+}
+.custom_card {
+  height: 150px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

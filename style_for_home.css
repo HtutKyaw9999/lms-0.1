@@ -1,7 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=PT+Serif&family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --primaryC: #39bdc8;
+  --secondaryC: #59d4e8;
+  --primaryF: "Montserrat";
+  --accordionI: #085f63;
+}
+* {
+  font-family: var(--primaryF);
+}
+.primary-c {
+  background-color: var(--primaryC);
+}
 
+.bg-img {
+  max-width: 100%;
+  background-image: url(./Images/art.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center center;
+  background-position: bottom;
+  height: 180px;
+}
+.bg-location {
+  background-color: var(--secondaryC);
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center center;
+  background-position: top;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
 body {
-  max-height: 100vh;
-  width: 100%;
-  font-family: "PT Serif", serif;
+  height: 100vh;
+  max-width: 100%;
+}
+.accordion-body {
+  background-color: var(--accordionI);
+}
+.btn-hover-color:hover {
+  background-color: #ff9900;
+}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+.caret {
+  cursor: pointer;
+}
+.caret::after {
+  transform: rotate(-180deg);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed image height */
+  object-fit: cover; /* Maintain aspect ratio and cover the space */
+}
+
+.card-body {
+  flex: 1; /* Allow the card body to expand and fill the remaining space */
+}
+.subtitle {
+  font-family: ;
+  font-weight: 270;
+
+  font-size: large;
+}
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links .col {
+  flex: 1;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
